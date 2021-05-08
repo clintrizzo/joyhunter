@@ -30,7 +30,7 @@ function PcardBtn () {
       disabled={isLoading}
       onClick={!isLoading ? handleClick : null}
     >
-      {isLoading ? 'Loading…' : 'Lets Gooooo'}
+      {isLoading ? 'Loading…' : 'Paintball Click Here'}
       
     </Button>
     </Link>

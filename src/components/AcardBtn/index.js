@@ -29,7 +29,7 @@ function CardBtn () {
       disabled={isLoading}
       onClick={!isLoading ? handleClick : null}
     >
-      {isLoading ? 'Loading…' : 'Click Here'}
+      {isLoading ? 'Loading…' : "Airsoft Click here"}
       
     </Button>
     </Link>

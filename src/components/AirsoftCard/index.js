@@ -9,11 +9,11 @@ const Airsoft = () => {
 <Card className="bg-dark text-white">
   <Card.Img src="/images/Aire.jpg"  alt="Card image" />
   <Card.ImgOverlay>
-    <Card.Title>Airsoft</Card.Title>
-
+    {/* <Card.Title>Airsoft</Card.Title> */}
+    <AcardBtn/>
     {/* <Card.Text>Last updated 3 mins ago</Card.Text> */}
   </Card.ImgOverlay>
-  <AcardBtn/>
+  
 </Card>
 {/* <div className="cpt">
   <CardBtn/>
