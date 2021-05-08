@@ -1,0 +1,11 @@
+.btn {
+  width: 1000px;
+  position: relative;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #30485f;
+  border-color: #0f2135;
+}
+/*# sourceMappingURL=style.css.map */
