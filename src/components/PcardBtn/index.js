@@ -24,7 +24,7 @@ function PcardBtn () {
 
   return (
     
-    <Link to="../../pages/Paintball.js">
+    <Link to="../../Paintball">
     <Button
       variant="primary"
       disabled={isLoading}

@@ -3,7 +3,7 @@ import AcardBtn from "../AcardBtn";
 import "./style.css";
 import {Card} from 'react-bootstrap';
 
-const Airsoft = () => {
+const AirsoftCard = () => {
   return <div className="AirB">
 
 <Card className="bg-dark text-white">
@@ -24,4 +24,4 @@ const Airsoft = () => {
   
 };
 
-export default Airsoft;
+export default AirsoftCard;
