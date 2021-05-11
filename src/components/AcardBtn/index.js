@@ -23,7 +23,7 @@ function CardBtn () {
   const handleClick = () => setLoading(true);
 
   return (
-    <Link to="../../pages/Airsoft.js">
+    <Link to="../../Airsoft">
     <Button
       variant="primary"
       disabled={isLoading}

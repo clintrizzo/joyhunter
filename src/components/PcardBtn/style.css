@@ -7,3 +7,24 @@
   position: relative;
 } */
 
+.btn {
+  font-size: 3rem;
+  font-weight: 600px;
+  
+ }
+ button.btn.btn-primary:hover {background-color: #342d874d}
+ 
+ 
+ button.btn.btn-primary {
+   color: #fff;
+   font-size: 34px;
+   background-color: transparent;
+   border-color: #0f2135;
+   position: center;
+   width: 150px;
+   padding:12px;
+   background: rgba(29, 30, 70, 0.5);
+   height: px;
+   font-weight: 600px;
+   font-family: 'Brush Script MT', cursive;
+ }
