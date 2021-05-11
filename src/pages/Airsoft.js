@@ -16,11 +16,11 @@ function Airsoft ()  {
    
      </div>
       
-   <AirsoftEvents />
-   {/* <AirsoftEvents />
-   <AirsoftEvents />
-   <AirsoftEvents />
-   <AirsoftEvents /> */}
+   <AirsoftEvents className="AEC"/>
+   <AirsoftEvents className="AEC"/>
+   <AirsoftEvents className="AEC"/>
+   <AirsoftEvents className="AEC"/>
+   <AirsoftEvents className="AEC"/>
  
    </div>
    </div>
