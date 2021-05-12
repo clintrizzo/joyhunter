@@ -11,6 +11,11 @@ import Homepage from "./pages/Homepage";
 import Profile from "./pages/Profile";
 import Event from "./pages/Event";
 
+// IMPORTANT !! We need these components here or the login wont work correctly. 
+import LoginButton from "./components/Signup"
+import LogoutButton from "./components/LogoutButton"
+// DONT DELETE!!
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 // import Wrapper from "./components/Wrapper";
@@ -21,9 +26,10 @@ function App() {
     <Router>
    <div>
      <Navbar />
+     < LoginButton />
+    < LogoutButton />
        {/* <Wrapper> */}
         {/* 
-        
         <Route exact path="/Create" component={Create} />
          
          <Route exact path="/Paintball" component={Paintball} />
@@ -32,7 +38,6 @@ function App() {
 
         <Route exact path="/" component={Homepage} />
         <Route exact path="/Homepage" component={Homepage} />
-
           <Route exact path="/Airsoft" component={Airsoft} />
            <Route exact path="/Profile" component={Profile} />
 
