@@ -2,6 +2,7 @@ import React from 'react';
 import ReactPlayer from "react-player"
 import Signup from "../components/Signup"
 import LogoutButton from "../components/LogoutButton"
+import "./style/style.css";
 
 
 function Homepage() {
@@ -16,10 +17,6 @@ function Homepage() {
         <a className="nav-link js-scroll-trigger" href="#page-top"><h1>Joy Hunter</h1></a>
             <a className="nav-link js-scroll-trigger" href="#services">Services </a>
             <a className="nav-link js-scroll-trigger" href="#videos">Videos </a>
-            <div>
-              <Signup />
-              <LogoutButton />
-              </div>
         </nav>
       </div>
     </div>
