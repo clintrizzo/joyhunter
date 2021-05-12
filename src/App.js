@@ -4,7 +4,7 @@ import './App.css';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 // This goes with the Wrapper
 // import Airsoft from "./pages/Airsoft";
-// import Contact from "./pages/Contact";
+ import Contact from "./pages/Contact";
 // import Create from "./pages/Create";
 // import Homepage from "./pages/Homepage";
 // import Paintball from "./pages/Paintball";
@@ -27,8 +27,8 @@ function App() {
         <Route exact path="/Create" component={Create} />
           <Route exact path="/Profile" component={Profile} />
          <Route exact path="/Paintball" component={Paintball} />
-         <Route exact path="/Airsoft" component={Airsoft} />
-          <Route exact path="/Contact" component={Contact} />  */}
+  <Route exact path="/Airsoft" component={Airsoft} />*/ }
+          <Route exact path="/Contact" component={Contact} /> 
         <Route exact path="/Event" component={Event} />
       {/* </Wrapper> */}
       <Footer />
