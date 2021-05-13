@@ -17,10 +17,10 @@ function Airsoft ()  {
      </div>
       
    <AirsoftEvents />
-   {/* <AirsoftEvents />
    <AirsoftEvents />
    <AirsoftEvents />
-   <AirsoftEvents /> */}
+   <AirsoftEvents />
+   <AirsoftEvents />
  
    </div>
    </div>
