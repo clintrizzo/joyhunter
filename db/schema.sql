@@ -1,1 +1,3 @@
-CREATE DATABASE IF NOT EXISTS joyhunter_db;
+DROP DATABASE IF EXISTS joyhunter_db;
+
+CREATE DATABASE joyhunter_db;
