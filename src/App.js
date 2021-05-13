@@ -30,8 +30,7 @@ function App() {
     <Router>
    <div>
      <Navbar />
-     < LoginButton />
-    < LogoutButton />
+     
        {/* <Wrapper> */}
         {/* 
         <Route exact path="/Create" component={Create} />
