@@ -1,11 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
+import LoginButton from "../Signup"
+import LogoutButton from "../LogoutButton"
+import { useAuth0 } from '@auth0/auth0-react';
 
 
 
-function Navbar() {
-  return (
+
+function Navbar(props) {
+  const {isAuthenticated } = useAuth0();
+  const loginNavbar =  (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <Link className="navbar-brand" to="/">
         JoyHunter
@@ -48,6 +53,7 @@ function Navbar() {
 
             </Link>
             </li>
+            
             <li className="nav-item">
             <Link
               to="/Profile"
@@ -57,10 +63,35 @@ function Navbar() {
 
             </Link>
           </li>
+          <li className ="nav-item">
+          < LogoutButton />
+            
+          </li>
         </ul>
       </div>
     </nav>
   );
+  const logoutNavbar =  (
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <Link className="navbar-brand" to="/">
+        JoyHunter
+        </Link>
+        <div>
+        <ul className="navbar-nav">
+        <li className ="nav-item">
+          < LoginButton />
+            
+          </li>
+          </ul>
+      </div>
+        </nav>)
+ if (isAuthenticated){
+   return loginNavbar
+  
+ } else return logoutNavbar 
+  
 }
+
+
 
 export default Navbar;
