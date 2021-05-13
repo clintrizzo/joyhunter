@@ -24,13 +24,13 @@ function PcardBtn () {
 
   return (
     
-    <Link to="../../pages/Paintball.js">
+    <Link to="../../Paintball">
     <Button
       variant="primary"
       disabled={isLoading}
       onClick={!isLoading ? handleClick : null}
     >
-      {isLoading ? 'Loading…' : 'Lets Gooooo'}
+      {isLoading ? 'Loading…' : 'Paintball Click Here'}
       
     </Button>
     </Link>

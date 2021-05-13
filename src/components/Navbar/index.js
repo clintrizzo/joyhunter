@@ -6,38 +6,55 @@ import "./style.css";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <Link className="navbar-brand" to="/">
-        Pupster
+        JoyHunter
       </Link>
       <div>
         <ul className="navbar-nav">
           <li className="nav-item">
             <Link
-              to="/"
+              to="/Event"
               className={
                 window.location.pathname === "/" || window.location.pathname === "/about"
                   ? "nav-link active"
                   : "nav-link"
               }
             >
-              About
-            </Link>
-          </li>
+              Events
+            </Link>          </li>
           <li className="nav-item">
             <Link
-              to="/discover"
+              to="/Airsoft"
               className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}
             >
-              Discover
+              Airsoft
             </Link>
           </li>
           <li className="nav-item">
             <Link
-              to="/search"
+              to="/Paintball"
               className={window.location.pathname === "/search" ? "nav-link active" : "nav-link"}
             >
-              Search
+              Paintball
+              </Link>
+          </li>
+              <li className="nav-item">
+            <Link
+              to="/Contact"
+              className={window.location.pathname === "/search" ? "nav-link active" : "nav-link"}
+            >
+              Contact Us
+
+            </Link>
+            </li>
+            <li className="nav-item">
+            <Link
+              to="/Profile"
+              className={window.location.pathname === "/search" ? "nav-link active" : "nav-link"}
+            >
+              Profile
+
             </Link>
           </li>
         </ul>

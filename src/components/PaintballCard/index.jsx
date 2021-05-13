@@ -1,27 +1,26 @@
 import React from "react";
-import AcardBtn from "../AcardBtn";
+import PcardBtn from "../PcardBtn";
 import "./style.css";
 import {Card} from 'react-bootstrap';
 
-const Airsoft = () => {
+const Paintball = () => {
   return <div className="AirB">
 
 <Card className="bg-dark text-white">
-  <Card.Img src="/images/Aire.jpg"  alt="Card image" />
+  <Card.Img src="/images/Pire.jpg" alt="Card image" />
   <Card.ImgOverlay>
-    <Card.Title>Airsoft</Card.Title>
-
+    {/* <Card.Title>Paintball</Card.Title> */}
+    <PcardBtn/>
     {/* <Card.Text>Last updated 3 mins ago</Card.Text> */}
   </Card.ImgOverlay>
-  <AcardBtn/>
+  
 </Card>
-{/* <div className="cpt">
-  <CardBtn/>
+{/* <div className="ppt">
+<PcardBtn/>
 </div> */}
-
   </div>;
 
   
 };
 
-export default Airsoft;
+export default Paintball;

@@ -23,13 +23,13 @@ function CardBtn () {
   const handleClick = () => setLoading(true);
 
   return (
-    <Link to="../../pages/Airsoft.js">
+    <Link to="../../Airsoft">
     <Button
       variant="primary"
       disabled={isLoading}
       onClick={!isLoading ? handleClick : null}
     >
-      {isLoading ? 'Loading…' : 'Click Here'}
+      {isLoading ? 'Loading…' : "Airsoft Click here"}
       
     </Button>
     </Link>
