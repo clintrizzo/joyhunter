@@ -10,17 +10,7 @@ function Homepage() {
 // put in a component
   return (
     <div className="App">
-      <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div className="container">
-      <div className="collapse navbar-collapse" id="navbarResponsive">
-        <nav className="navbar-nav text-uppercase ml-auto">
-        <a className="nav-link js-scroll-trigger" href="#page-top"><h1>Joy Hunter</h1></a>
-            <a className="nav-link js-scroll-trigger" href="#services">Services </a>
-            <a className="nav-link js-scroll-trigger" href="#videos">Videos </a>
-        </nav>
-      </div>
-    </div>
-  </nav>
+      
   
   <section className="page-section" id="services">
     <div className="container">
