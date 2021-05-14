@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { profileSeed } = require('../../seeds/profileSeed');
 
-router.post('/signup', async (req, res) => {
+router.post('/', async (req, res) => {
   try {
     const newProject = await profileSeed.create({
         name: req.body.name,

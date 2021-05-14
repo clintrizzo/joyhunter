@@ -36,7 +36,7 @@ Profile.init(
     timestamps: false,
     freezeTableName: false,
     underscored: true,
-    modelName: "event",
+    modelName: "profile",
   }
 );
 

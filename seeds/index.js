@@ -1,6 +1,6 @@
 const eventSeed = require("./eventSeed");
 const profileSeed = require("./profileSeed");
-const sequelize = require("../config/connection");
+const sequelize = require("../connection/connection");
 
 const seedAll = async () => {
   await sequelize.sync({ force: true });
