@@ -15,15 +15,20 @@ Event.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    location: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    phoneNumber: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
     date: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
         isDate: true,
       },
-    },
-    description: {
-      type: DataTypes.STRING,
     },
   },
   {

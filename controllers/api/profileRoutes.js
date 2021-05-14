@@ -5,6 +5,7 @@ router.post('/', async (req, res) => {
   try {
     const newProject = await profileSeed.create({
         name: req.body.name,
+        email: req.body.email,
         age: req.body.age,
         city: req.body.city,
         dob: req.body.dob,
