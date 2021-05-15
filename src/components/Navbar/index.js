@@ -65,7 +65,7 @@ function Navbar() {
           </li>
           <li className ="nav-item">
           < LogoutButton />
-            
+        
           </li>
         </ul>
       </div>
