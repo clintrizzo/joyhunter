@@ -14,6 +14,7 @@ import Homepage from "./pages/Homepage";
 import Paintball from "./pages/Paintball";
 import Profile from "./pages/Profile";
 import Event from "./pages/Event";
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 // import Wrapper from "./components/Wrapper";

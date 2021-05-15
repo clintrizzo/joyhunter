@@ -9,15 +9,13 @@ const Paintball = () => {
 <Card className="bg-dark text-white">
   <Card.Img src="/images/Pire.jpg" alt="Card image" />
   <Card.ImgOverlay>
-    {/* <Card.Title>Paintball</Card.Title> */}
-    <PcardBtn/>
-    {/* <Card.Text>Last updated 3 mins ago</Card.Text> */}
+  <div className="PvBetn">
+    <PcardBtn />
+    </div>
   </Card.ImgOverlay>
   
 </Card>
-{/* <div className="ppt">
-<PcardBtn/>
-</div> */}
+
   </div>;
 
   
