@@ -15,11 +15,6 @@ import Paintball from "./pages/Paintball";
 import Profile from "./pages/Profile";
 import Event from "./pages/Event";
 
-// IMPORTANT !! We need these components here or the login wont work correctly. 
-// import LoginButton from "./components/Signup"
-// import LogoutButton from "./components/LogoutButton"
-// DONT DELETE!!
-
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 // import Wrapper from "./components/Wrapper";
@@ -39,15 +34,10 @@ function App() {
   */ }
           <Route exact path="/Contact" component={Contact} /> 
           <Route exact path="/Paintball" component={Paintball} />
-
-         
-
         <Route exact path="/" component={Homepage} />
         <Route exact path="/Homepage" component={Homepage} />
           <Route exact path="/Airsoft" component={Airsoft} />
            <Route exact path="/Profile" component={Profile} />
-
-
         <Route exact path="/Event" component={Event} />
       {/* </Wrapper> */}
       <Footer />
