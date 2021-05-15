@@ -1,17 +1,27 @@
-import React, { Component } from "react";
-import Form from "react-bootstrap/Form"
+// import React, { Component} from "react";
+// import Form from "react-bootstrap/Form"
+import emailjs from 'emailjs-com';
+
 
 function Contact() {
-    const submitForm = (e) => {
-        e.preventDefault()
-        console.log("hello")
+    const sendEmail = (e) => {
+        e.preventDefault();
+        
+            emailjs.sendForm('service_l81mmhy', 'feedback-1', e.target, 'user_X1VBvEi1DiHUyabBmhHnw')
+              .then((result) => {
+                  console.log(result.text);
+              }, (error) => {
+                  console.log(error.text);
+              });
+              e.target.reset()
     }
+
     return (
         <div className="container">
             <div className="row">
                 <div className="col-md-12">
                     <div className="well well-sm">
-                        <form className="form-horizontal" onSubmit={submitForm}>
+                        <form className="form-horizontal" onSubmit={sendEmail}>
                             <fieldset>
                                 <legend className="text-center">Contact Us</legend>
 
