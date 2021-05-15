@@ -1,5 +1,9 @@
-button {
-    background-color: black;
-    color: white;
-    float: left;
-  }
+nav:before{
+  color:grey
+}
+
+nav:hover{
+  color: rgb(199, 149, 149);
+  cursor: pointer;
+  font:larger;
+}
