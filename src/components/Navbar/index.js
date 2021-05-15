@@ -8,7 +8,7 @@ import { useAuth0 } from '@auth0/auth0-react';
 
 
 
-function Navbar(props) {
+function Navbar() {
   const {isAuthenticated } = useAuth0();
   const loginNavbar =  (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">

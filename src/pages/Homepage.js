@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactPlayer from "react-player"
-import Signup from "../components/Signup"
-import LogoutButton from "../components/LogoutButton"
 import "./style/style.css";
+
 
 
 function Homepage() {
@@ -10,7 +9,6 @@ function Homepage() {
 // put in a component
   return (
     <div className="App">
-      
   
   <section className="page-section" id="services">
     <div className="container">
@@ -25,8 +23,7 @@ function Homepage() {
         </div>
       </div>
     </div>
-  </section>
-
+  </section>  
   <section className="page-section" id="videos">
     <div className="container">
       <div className="row">
