@@ -1,38 +1,19 @@
-const { Model, DataTypes, INTEGER, STRING } = require("sequelize");
-const sequelize = require("../connection/connection.js");
+const { Event } = require("../models");
 
-class Event extends Model {}
-
-Event.init(
+const eventData = [
   {
-    id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      primaryKey: true,
-      autoIncrement: true,
-    },
-    eventTitle: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    date: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      validate: {
-        isDate: true,
-      },
-    },
-    description: {
-      type: DataTypes.STRING,
-    },
+    eventTitle: "Birthday Party",
+    location: "1700 Vandegrift Blvd, Oceanside, CA 92057",
+    phoneNumber: "8669854932",
+    date: "06/09/2020",
   },
   {
-    sequelize,
-    timestamps: false,
-    freezeTableName: false,
-    underscored: true,
-    modelName: "event",
-  }
-);
+    eventTitle: "Night raid at woods",
+    location: "1700 Vandegrift Blvd, Oceanside, CA 92057",
+    phoneNumber: "8669854932",
+    date: "12/13/2020",
+  },
+];
 
-module.exports = Event;
+const eventInfo = () => Event.bulkCreate(eventData);
+module.exports = eventInfo;
