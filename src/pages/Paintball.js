@@ -6,13 +6,29 @@ function Paintball ()  {
           <div style={{ 
        backgroundImage: `url("./images/Back.jpg")` 
      }}>
+       
+     
+    
    <div className="mme">
-     </div>
-     <PaintballEvents />
-   <PaintballEvents />
-   <PaintballEvents />
-   <PaintballEvents />
-   <PaintballEvents /> 
+   
+   
+      
+   <PaintballEvents className="pone"/>
+   <PaintballEvents className="pone"/>
+   <PaintballEvents className="pone"/>
+   <PaintballEvents className="pone"/>
+   <PaintballEvents className="pone"/>
+   <PaintballEvents className="pone"/>
+   <PaintballEvents className="pone"/>
+   <PaintballEvents className="pone"/>
+   <PaintballEvents className="pone"/>
+   <PaintballEvents className="pone"/>
+   <PaintballEvents className="pone"/>
+   <PaintballEvents className="pone"/>
+   
+
+
+   </div>
    </div>
    </div>
   )

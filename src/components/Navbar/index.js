@@ -79,7 +79,7 @@ function Navbar(props) {
         <div>
         <ul className="navbar-nav">
         <li className ="nav-item">
-          < LoginButton />
+          < LoginButton className="NavBenn"/>
             
           </li>
           </ul>

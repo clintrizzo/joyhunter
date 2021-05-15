@@ -16,8 +16,8 @@ import Profile from "./pages/Profile";
 import Event from "./pages/Event";
 
 // IMPORTANT !! We need these components here or the login wont work correctly. 
-import LoginButton from "./components/Signup"
-import LogoutButton from "./components/LogoutButton"
+// import LoginButton from "./components/Signup"
+// import LogoutButton from "./components/LogoutButton"
 // DONT DELETE!!
 
 import Navbar from "./components/Navbar";

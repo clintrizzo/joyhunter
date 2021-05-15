@@ -4,4 +4,13 @@
 .profilewr {
   color: white;
 }
+.mme {
+  width: 100% !important;
+  margin-bottom: 1% !important;
+  display: inline-table !important;
+  position: relative;
+}
+/* .pone {
+  width: 20% !important;
+} */
 /*# sourceMappingURL=style.css.map */

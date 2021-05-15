@@ -14,14 +14,23 @@ function Airsoft ()  {
     
    <div className="mme">
    
-     </div>
+   
       
-   <AirsoftEvents />
-   <AirsoftEvents />
-   <AirsoftEvents />
-   <AirsoftEvents />
-   <AirsoftEvents />
- 
+   <AirsoftEvents className="pone"/>
+   <AirsoftEvents className="pone"/>
+   <AirsoftEvents className="pone"/>
+   <AirsoftEvents className="pone"/>
+   <AirsoftEvents className="pone"/>
+   <AirsoftEvents className="pone"/>
+   <AirsoftEvents className="pone"/>
+   <AirsoftEvents className="pone"/>
+   <AirsoftEvents className="pone"/>
+   <AirsoftEvents className="pone"/>
+   <AirsoftEvents className="pone"/>
+   <AirsoftEvents className="pone"/>
+   <AirsoftEvents className="pone"/>
+   <AirsoftEvents className="pone"/>
+   </div>
    </div>
    </div>
   )
