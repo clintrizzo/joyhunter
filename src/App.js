@@ -13,8 +13,6 @@ import Airsoft from "./pages/Airsoft";
 import Homepage from "./pages/Homepage";
 import Paintball from "./pages/Paintball";
 import Profile from "./pages/Profile";
-import Event from "./pages/Event";
-
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 // import Wrapper from "./components/Wrapper";
@@ -38,7 +36,6 @@ function App() {
         <Route exact path="/Homepage" component={Homepage} />
           <Route exact path="/Airsoft" component={Airsoft} />
            <Route exact path="/Profile" component={Profile} />
-        <Route exact path="/Event" component={Event} />
       {/* </Wrapper> */}
       <Footer />
       </div>
