@@ -1,5 +1,6 @@
 const { Model, DataTypes, INTEGER, STRING } = require("sequelize");
-const sequelize = require("../backend/connection/connection.js");
+const sequelize = require("../config/connection.js");
+
 
 class Event extends Model {}
 
