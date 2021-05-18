@@ -1,11 +1,10 @@
 import React from "react";
 import PaintballEvents from "../components/PaintballEvents";
+import "./style/style.css";
 function Paintball ()  {
   return (
-    <div className="asew">
-          <div style={{ 
-       backgroundImage: `url("./images/Back.jpg")` 
-     }}>
+    <div className="App" style={{ 
+      backgroundImage: `url("./images/Back.jpg")`}}>
        
      
     
@@ -28,7 +27,6 @@ function Paintball ()  {
    
 
 
-   </div>
    </div>
    </div>
   )

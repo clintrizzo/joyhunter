@@ -1,9 +1,7 @@
-nav:before{
-  color:grey
-}
 
-nav:hover{
-  color: rgb(199, 149, 149);
-  cursor: pointer;
+
+nav{
+  color: rgb(173, 166, 166);
+  cursor: crosshair;
   font:larger;
 }
