@@ -16,11 +16,11 @@ function Homepage() {
         <div className="col-lg-12 text-center">
           <h1 className="section-heading text-uppercase">Services</h1>
           <hr></hr>
-          <h4 className="section-subheading text-muted">Welcome to Joy Hunter! If you enjoy paintballing or airsofting this is the page for you. We set up local 
+          <h5>Welcome to Joy Hunter! If you enjoy paintballing or airsofting this is the page for you. We set up local 
           games for both hobbies and allow you as the user to register to the games of your choice. Once you register for a game it will go to your profile page
           where you'll have reminders for when your game is coming up. Our main services for this application is to get the hobby to be better connected and to get teams 
           together again. We hope you enjoy and be sure to set up an account with us so you can earn badges for games you've played and be able to keep memories of the events 
-          you've attended.</h4>
+          you've attended.</h5>
         </div>
       </div>
     </div>
