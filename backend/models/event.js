@@ -1,7 +1,6 @@
 const { Model, DataTypes, INTEGER, STRING } = require("sequelize");
 const sequelize = require("../config/connection.js");
 
-
 class Event extends Model {}
 
 Event.init(
@@ -31,6 +30,9 @@ Event.init(
         isDate: true,
       },
     },
+    profile_id: {
+      type: DataTypes.INTEGER,
+    },
   },
   {
     sequelize,
@@ -41,12 +43,14 @@ Event.init(
   }
 );
 
-Event.associate = function (models) {
-  Event.belongsTo(models.Profile, {
-    foreignKey: {
-      allowNull: false,
-    },
-  });
-};
+// Event.associate = function (models) {
+//   Event.belongsTo(models.Profile, {
+//     foreignKey: {
+//       allowNull: false,
+//     },
+//   });
+// };
 
 module.exports = Event;
+
+// let asdfdasf = 'SELECT auth0.id'; query += 'FROM profile INNER JOIN event ON event.id'

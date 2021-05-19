@@ -15,13 +15,6 @@ Profile.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    email: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        isEmail: true,
-      },
-    },
     age: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -47,10 +40,10 @@ Profile.init(
   }
 );
 
-Profile.associate = function (models) {
-  Profile.hasMany(models.Event, {
-    onDelete: "cascade",
-  });
-};
+// Profile.associate = function (models) {
+//   Profile.hasMany(models.Event, {
+//     onDelete: "cascade",
+//   });
+// };
 
 module.exports = Profile;
