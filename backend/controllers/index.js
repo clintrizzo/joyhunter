@@ -11,6 +11,4 @@ router.use('airsoftController', airsoftController);
 router.use('paintballController', paintballController);
 router.use('profileController', profileController);
 
-
-
 module.exports = router;
