@@ -1,13 +1,15 @@
 const router = require("express").Router();
 
 // Event DB
-const eventDatabase = require("./eventDatabase");
+const airsoftDatabase = require("./airsoftDatabase");
+const paintballDatabase = require("./paintballDatabase");
 const profileDatabase = require("./profileDatabase");
-const profeveDatabase = require("./profeveDatabase");
 
 
-router.use("/events", eventDatabase);
+
+router.use("/airsoft", airsoftDatabase);
+router.use("/paintball", paintballDatabase);
 router.use("/profiles", profileDatabase);
-router.use("/profeves", profeveDatabase);
+
 
 module.exports = router;

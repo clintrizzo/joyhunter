@@ -1,9 +1,10 @@
 const { Model, DataTypes, INTEGER, STRING } = require("sequelize");
 const sequelize = require("../config/connection.js");
 
-class Profile extends Model {}
 
-Profile.init(
+class Paintball extends Model {}
+
+Paintball.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -11,56 +12,50 @@ Profile.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    eventTitle: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    email: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        isEmail: true,
-      },
-    },
-    age: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-    city: {
+    location: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    dob: {
+    phoneNumber: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    date: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
         isDate: true,
       },
     },
-    Event_id: {
-      type: DataTypes.INTEGER,
-      
-    }
+      rule1: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      rule2: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+    
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: false,
     underscored: true,
-    modelName: "profile",
+    modelName: "paintball",
   }
 );
 
-Profile.associate = function (models) {
-  Profile.hasMany(models.Airsoft, {
-    onDelete: "cascade",
+Paintball.associate = function (models) {
+  Paintball.belongsTo(models.Profile, {
+    foreignKey: {
+      allowNull: false,
+    },
   });
 };
 
-Profile.associate = function (models) {
-  Profile.hasMany(models.Paintball, {
-    onDelete: "cascade",
-  });
-};
-
-module.exports = Profile;
+module.exports = Paintball;
