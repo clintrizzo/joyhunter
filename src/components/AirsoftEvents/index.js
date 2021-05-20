@@ -24,7 +24,7 @@ const AirsoftEvents = () => {
         events.map(event => {
           return(
 <Card className="text-center" style={{ width: '18rem' }}>
-  <Card.Header>{event.title}</Card.Header>
+  <Card.Header>Welcome to the Airsoft Games</Card.Header>
   <Card.Body>
     <Card.Title>1700 Vandegrift BLVD, Oceanside CA 92057</Card.Title>
     <Card.Text>

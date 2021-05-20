@@ -11,8 +11,7 @@ function Profile ()  {
    // <Card
    //   {...{ className }}
    //   style={{ width: "350px" }}>
-   <div className="App" style={{ 
-    backgroundImage: `url("./images/Back.jpg")`}}>
+   <div>
        
      
     

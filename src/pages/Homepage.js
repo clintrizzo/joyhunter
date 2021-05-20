@@ -8,8 +8,7 @@ function Homepage() {
 
 // put in a component
   return (
-    <div className="App" style={{ 
-      backgroundImage: `url("./images/Back.jpg")`}}>
+    <div>
   <section className="page-section" id="services">
     <div className="container">
       <div className="row">

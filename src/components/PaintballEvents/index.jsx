@@ -6,7 +6,7 @@ const PaintballEvents = () => {
   return (
     <div className="aew">
     <Card className="text-center" style={{ width: '18rem' }}>
-    <Card.Header>Welcome to The Airsoft Park!</Card.Header>
+    <Card.Header>Welcome to The Paintball Park!</Card.Header>
     <Card.Body>
       <Card.Title>1700 Vandegrift BLVD, Oceanside CA 92057</Card.Title>
       <Card.Text>

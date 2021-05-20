@@ -1,11 +1,8 @@
-.App{
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.asew{
-  background-repeat: no-repeat;
-  background-size: cover;
+body{
+   background-image: url("Back.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 hr{
@@ -52,6 +49,12 @@ h5{
   }
 }
 
+.mme{
+  padding-left: 15px;
+  padding-top: 15px;
+  border-spacing: 5px;
+  border-radius: 25px;
+}
 /* .pone {
   width: 20% !important;
 } */

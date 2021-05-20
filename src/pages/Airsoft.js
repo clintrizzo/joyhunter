@@ -1,36 +1,26 @@
 import React from "react";
-import AirsoftEvents from "../components/AirsoftEvents";
+import PaintballEvents from "../components/PaintballEvents";
 import "./style/style.css";
-
-function Airsoft ()  {
+function Paintball ()  {
   return (
 
-    <div className="App" style={{ 
-      backgroundImage: `url("./images/Back.jpg")`}}>
-       
-     
-    
    <div className="mme">
    
    
       
-   <AirsoftEvents className="pone"/>
-   <AirsoftEvents className="pone"/>
-   <AirsoftEvents className="pone"/>
-   <AirsoftEvents className="pone"/>
-   <AirsoftEvents className="pone"/>
-   <AirsoftEvents className="pone"/>
-   <AirsoftEvents className="pone"/>
-   <AirsoftEvents className="pone"/>
-   <AirsoftEvents className="pone"/>
-   <AirsoftEvents className="pone"/>
-   <AirsoftEvents className="pone"/>
-   <AirsoftEvents className="pone"/>
-   <AirsoftEvents className="pone"/>
-   <AirsoftEvents className="pone"/>
-   </div>
+   <PaintballEvents className="pone"/>
+   <PaintballEvents className="pone"/>
+   <PaintballEvents className="pone"/>
+   <PaintballEvents className="pone"/>
+   <PaintballEvents className="pone"/>
+   <PaintballEvents className="pone"/>
+   <PaintballEvents className="pone"/>
+   <PaintballEvents className="pone"/>
+   <PaintballEvents className="pone"/>
+   <PaintballEvents className="pone"/>
+   <PaintballEvents className="pone"/>
+   <PaintballEvents className="pone"/>
    </div>
   )
  };
- 
- export default Airsoft;
+ export default Paintball;
