@@ -61,3 +61,4 @@ const airsoftData = [
 
 const airsoftInfo = () => Airsoft.bulkCreate(airsoftData);
 module.exports = airsoftInfo;
+

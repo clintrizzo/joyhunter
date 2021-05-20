@@ -61,3 +61,4 @@ const paintballData = [
 
 const paintballInfo = () => Paintball.bulkCreate(paintballData);
 module.exports = paintballInfo;
+
