@@ -23,7 +23,6 @@ function App() {
     <Router>
    <div>
      <Navbar />
-     
        {/* <Wrapper> */}
         {/* 
         <Route exact path="/Create" component={Create} />
