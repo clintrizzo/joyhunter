@@ -2,9 +2,9 @@ const { Model, DataTypes, INTEGER, STRING } = require("sequelize");
 const sequelize = require("../config/connection.js");
 
 
-class Event extends Model {}
+class Airsoft extends Model {}
 
-Event.init(
+Airsoft.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -31,22 +31,31 @@ Event.init(
         isDate: true,
       },
     },
+      rule1: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      rule2: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+    
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: false,
     underscored: true,
-    modelName: "event",
+    modelName: "airsoft",
   }
 );
 
-Event.associate = function (models) {
-  Event.belongsTo(models.Profile, {
+Airsoft.associate = function (models) {
+  Airsoft.belongsTo(models.Profile, {
     foreignKey: {
       allowNull: false,
     },
   });
 };
 
-module.exports = Event;
+module.exports = Airsoft;

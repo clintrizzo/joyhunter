@@ -1,16 +1,26 @@
-const Event = require("./event");
+const Airsoft = require("./airsoft");
+const Paintball = require("./paintball");
 const Profile = require("./profile");
 
-Event.belongsTo(Profile, {
+Paintball.belongsTo(Profile, {
   foreignKey: 'profile_id',
 });
 
-Profile.hasMany(Event, {
+
+Airsoft.belongsTo(Profile, {
+  foreignKey: 'profile_id',
+});
+
+Profile.hasMany(Airsoft, {
   foreignKey: 'Profile_id',
 });
 
+Profile.hasMany(Paintball, {
+  foreignKey: 'Profile_id',
+});
 
 module.exports = {
-  Event,
+  Airsoft,
   Profile,
+  Paintball,
 };
