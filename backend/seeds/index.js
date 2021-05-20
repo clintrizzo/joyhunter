@@ -1,10 +1,12 @@
-const eventSeed = require("./eventSeed");
+const airsoftSeed = require("./airsoftSeed");
+const paintballSeed = require("./paintballSeed");
 const profileSeed = require("./profileSeed");
 const sequelize = require("../config/connection");
 
 const seedAll = async () => {
   await sequelize.sync({ force: true });
-  await eventSeed();
+  await airsoftSeed();
+  await paintballSeed();
   await profileSeed();
   process.exit(0);
 };

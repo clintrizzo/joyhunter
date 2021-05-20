@@ -37,6 +37,10 @@ Profile.init(
         isDate: true,
       },
     },
+    Event_id: {
+      type: DataTypes.INTEGER,
+      
+    }
   },
   {
     sequelize,
@@ -48,7 +52,13 @@ Profile.init(
 );
 
 Profile.associate = function (models) {
-  Profile.hasMany(models.Event, {
+  Profile.hasMany(models.Airsoft, {
+    onDelete: "cascade",
+  });
+};
+
+Profile.associate = function (models) {
+  Profile.hasMany(models.Paintball, {
     onDelete: "cascade",
   });
 };

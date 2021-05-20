@@ -1,17 +1,16 @@
+  
 const router = require('express').Router();
 
-const apiRoutes = require('./api');
-const homeRoutes = require('./homeRoutes');
 
-const eventController = require('./eventController');
+const airsoftController = require('./airsoftController');
+const paintballController = require('./paintballController');
 const profileController = require('./profileController');
-const profeve = require('./profeveController');
 
-router.use('eventController', eventController);
+
+router.use('airsoftController', airsoftController);
+router.use('paintballController', paintballController);
 router.use('profileController', profileController);
-router.use('profeve', profeve);
 
-router.use('/', homeRoutes);
-router.use('/api', apiRoutes);
+
 
 module.exports = router;
