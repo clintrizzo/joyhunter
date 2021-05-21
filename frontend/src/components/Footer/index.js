@@ -1,10 +1,10 @@
 import React from "react";
 import "./style.css";
-function Footer() {
-    return (
-        <footer className=" footer mt-auto text-center bg-dark text-light">
-          &copy;2021 JoyHunter
-        </footer>
-    );
-}
+
+  const Footer = () => (
+    <div className="footer">
+      <p className="letters">@ Joyhunter 2021</p>
+      <hr className="line"></hr>
+    </div>
+  );
 export default Footer;

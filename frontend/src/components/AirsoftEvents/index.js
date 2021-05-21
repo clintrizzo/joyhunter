@@ -26,14 +26,17 @@ const AirsoftEvents = () => {
   }, [])
 
   return (
-    <div className="aew">
+    <div className="some-page-wrapper">
+      <h1 className="eventPage">Airsoft Events</h1>
       {
         airsoft.map(airsoft => {
           return(
-<Card className="text-center" data-id={airsoft.id} style={{ width: '18rem' }}>
-  <Card.Header>{airsoft.eventTitle}</Card.Header>
-  <Card.Body>
-    <Card.Title>{airsoft.location}</Card.Title>
+<Card className=" top text-center" data-id={airsoft.id}>
+  <Card.Header className="head">{airsoft.eventTitle}</Card.Header>
+  <center>
+  <Card.Body >
+    <Card.Title className="tile">{airsoft.location}</Card.Title>
+    <hr></hr>
     <Card.Text>
     {airsoft.phoneNumber}
     </Card.Text>
@@ -48,12 +51,11 @@ const AirsoftEvents = () => {
     <Button  variant="primary">Reserve</Button>
 
   </Card.Body>
- 
+ </center>
 </Card>
           )
         })
       }
-  
 </div>
   )
 };

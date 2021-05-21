@@ -21,15 +21,18 @@ const PaintballEvents = () => {
   
   }, [])
   return (
-    <div className="aew">
+    <div className="some-page-wrapper">
+      <h1 className="eventPage">Paintball Events</h1>
       {
          paintball.map(paintball => {
           return(
      
-    <Card className="text-center" data-id={paintball.id} style={{ width: '18rem' }}>
-    <Card.Header>{paintball.eventTitle}</Card.Header>
+    <Card className="top text-center" data-id={paintball.id}>
+    <Card.Header className="head">{paintball.eventTitle}</Card.Header>
+    <center>
     <Card.Body>
-      <Card.Title>{paintball.location}</Card.Title>
+      <Card.Title className="tile">{paintball.location}</Card.Title>
+      <hr></hr>
       <Card.Text>
       {paintball.phoneNumber}
       </Card.Text>
@@ -42,7 +45,7 @@ const PaintballEvents = () => {
       
       <Button variant="primary">Reservation</Button>
     </Card.Body>
-   
+   </center>
   </Card>
   )
 })

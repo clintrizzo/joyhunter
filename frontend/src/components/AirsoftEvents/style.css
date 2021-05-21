@@ -1,14 +1,47 @@
+.some-page-wrapper{
+  width: 80%;
+  margin-left: 190px;
+
+}
+
+.card{
+  opacity: .8;
+  background-color: grey;
+  color: black;
+}
+
+.top{
+  height: 365px;
+}
+
+hr{
+  width: 500px;
+}
+
+.head{
+  margin-top: -40px;
+  font-size: 25px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.tile{
+  margin-top: -100px;
+}
+
+.eventPage{
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: -30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+Button {
+  width: 300px;
+}
+
 .EventBtn {
   width: 50% !important;
   font-size: 150% !important;
   color: black !important;
-}
-
-.aew {
-  margin-bottom: 1% !important;
-  width: 16% !important;
-  display: inline-table !important;
-}
-Button {
-  width: 70% !important;
 }
