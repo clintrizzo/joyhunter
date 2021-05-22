@@ -37,9 +37,9 @@ Profile.init(
         isDate: true,
       },
     },
-    Event_id: {
-      type: DataTypes.INTEGER,
-      
+    event_id: {
+      type: DataTypes.STRING,
+      allowNull: true
     }
   },
   {
