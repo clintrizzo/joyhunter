@@ -27,7 +27,8 @@ function App() {
        {/* <Wrapper> */}
           
     <div className="App" style={{ 
-      backgroundImage: `url("./images/Back.jpg")`}}></div>
+      backgroundImage: `url("./images/Back.jpg")`}}>
+      <div className="pages">
           <Route exact path="/Contact" component={Contact} /> 
           <Route exact path="/Paintball" component={Paintball} />
         <Route exact path="/" component={Homepage} />
@@ -36,6 +37,8 @@ function App() {
            <Route exact path="/Profile" component={Profile} />
            {/* <Route exact path="/Wrapper" component={Wrapper} /> */}
       {/* </Wrapper> */}
+      </div>
+      </div>
       <Footer />
       </div>
     </Router>

@@ -1,7 +1,11 @@
 .some-page-wrapper{
   width: 80%;
-  margin-left: 190px;
+  margin-left: 250px;
 
+}
+
+.eventPage{
+  margin-right: 180px;
 }
 
 .card{
@@ -25,7 +29,7 @@ hr{
 }
 
 .tile{
-  margin-top: -100px;
+  margin-top: -85px;
 }
 
 .eventPage{

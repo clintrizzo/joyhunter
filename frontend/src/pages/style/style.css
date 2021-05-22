@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .App{
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,18 +31,6 @@ h5{
 
 .page-section{
   padding-top: 30px;
-}
-
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-}
-
-/* Clear floats after image containers */
-.row::after {
-  clear: both;
-  display: table;
 }
 
 .video{
@@ -79,4 +71,4 @@ h5{
   height: 100% !important;
   display: table;
 }
-/*# sourceMappingURL=style.css.map */
+
