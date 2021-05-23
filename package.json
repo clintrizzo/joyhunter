@@ -23,6 +23,7 @@
   "homepage": "https://github.com/Noreldin-S/project-3#readme",
   "dependencies": {
     "concurrently": "^6.1.0",
-    "if-env": "^1.0.4"
+    "if-env": "^1.0.4",
+    "nodejs": "*"
   }
 }
