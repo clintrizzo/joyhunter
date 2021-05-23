@@ -1,5 +1,7 @@
-.aew {
+.top {
   margin-bottom: 1% !important;
-  width: 16% !important;
-  display: inline-table !important;
+  width: 10% !important;
+  display:inline-table !important;
+  margin: 45px;
+  font-family:Georgia, 'Times New Roman', Times, serif
 }

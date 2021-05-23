@@ -11,6 +11,10 @@ function Paintball ()  {
    <div className="mme">
      <PaintballEvents className="pone"/>
    </div>
+   <br></br>
+   <br></br>
+   <br></br>
+   <br></br>
    </div>
   )
  };
