@@ -14,7 +14,7 @@ function Homepage() {
     <div className="container">
       <div className="row">
         <div className="col-lg-12 text-center">
-          <h1 className="section-heading text-uppercase">Services</h1>
+          <h1 className="section-heading text-uppercase" style={{marginTop:"-60px"}}>Services</h1>
           <hr></hr>
           <h5>Welcome to Joy Hunter! If you enjoy paintballing or airsofting this is the page for you. We set up local 
           games for both hobbies and allow you as the user to register to the games of your choice. Once you register for a game it will go to your profile page
@@ -50,6 +50,10 @@ function Homepage() {
       </div>
     </div>
   </section>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
   </div>
   )
 }
