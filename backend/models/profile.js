@@ -37,7 +37,11 @@ Profile.init(
         isDate: true,
       },
     },
-    event_id: {
+    airsoft_id: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
+    paintball_id: {
       type: DataTypes.STRING,
       allowNull: true
     }

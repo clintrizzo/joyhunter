@@ -1,8 +1,11 @@
 import React from "react";
 import {Card, Button} from 'react-bootstrap';
-import {useState, useEffect} from "react";
+import {useState, useEffect, post} from "react";
+
+ 
 
 import "./style.css";
+
 
 
 
@@ -25,6 +28,7 @@ const AirsoftEvents = () => {
   
   }, [])
 
+
   return (
     <div className="aew">
       {
@@ -45,7 +49,7 @@ const AirsoftEvents = () => {
     <Card.Title> {airsoft.rule2}</Card.Title>
     
     
-    <Button  variant="primary">Reserve</Button>
+    <Button > Reserve </Button>
 
   </Card.Body>
  
@@ -56,6 +60,6 @@ const AirsoftEvents = () => {
   
 </div>
   )
-};
+    };
 
 export default AirsoftEvents;

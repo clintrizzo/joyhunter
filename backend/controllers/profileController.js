@@ -9,8 +9,8 @@ exports.eventLists = function (req, res) {
 
 exports.reserve = async (req, res) => {
   try {
-    const { userId, eventId } = req.body;
-
+    const { userId, eventId, eventType } = req.body;
+    // if ... else... 
     const profiles = await Profile.findOne({
       where: {
         id: userId,
@@ -46,3 +46,4 @@ exports.reserve = async (req, res) => {
     res.sendStatus(500);
   }
 };
+
