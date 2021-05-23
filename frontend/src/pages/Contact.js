@@ -50,7 +50,7 @@ function Contact() {
 
                                 <div className="form-group">
                                     <div className="col-md-12 text-center">
-                                        <button type="submit" className="btn-primary btn-sm" style={{marginTop:"15px"}}>Submit</button>
+                                        <button type="submit" className="button">Submit</button>
                                     </div>
                                 </div>
                                 <br></br>

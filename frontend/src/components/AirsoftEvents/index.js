@@ -31,8 +31,8 @@ const AirsoftEvents = () => {
       {
         airsoft.map(airsoft => {
           return(
-<Card className=" top text-center" data-id={airsoft.id}>
-  <Card.Header className="head">{airsoft.eventTitle}</Card.Header>
+<Card className=" top text-center" style={{borderRadius:"40px", backgroundColor:"rgb(245,245,245)"}} data-id={airsoft.id}>
+  <Card.Header className="head" style={{borderRadius:"40px", backgroundColor:"lightgray"}}>{airsoft.eventTitle}</Card.Header>
   <center>
   <Card.Body >
     <Card.Title className="tile">{airsoft.location}</Card.Title>
@@ -48,7 +48,7 @@ const AirsoftEvents = () => {
     <Card.Title> {airsoft.rule2}</Card.Title>
     
     
-    <Button  variant="primary">Reserve</Button>
+    <Button className="button">Reserve</Button>
 
   </Card.Body>
  </center>

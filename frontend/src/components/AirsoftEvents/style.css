@@ -1,11 +1,10 @@
 .some-page-wrapper{
-  width: 80%;
+  width: 90%;
   margin-left: 250px;
-
 }
 
 .eventPage{
-  margin-right: 180px;
+  margin-left: -380px;
 }
 
 .card{
@@ -29,7 +28,7 @@ hr{
 }
 
 .tile{
-  margin-top: -85px;
+  margin-top: -15px;
 }
 
 .eventPage{
@@ -39,13 +38,7 @@ hr{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
-Button {
-  width: 300px;
+.button{
+  width:300px;
 }
 
-.EventBtn {
-  width: 50% !important;
-  font-size: 150% !important;
-  color: black !important;
-}
