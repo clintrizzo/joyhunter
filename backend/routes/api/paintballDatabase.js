@@ -8,44 +8,44 @@ router.route("/")
 .get(paintballController.eventLists);
 
 
-router.get('/', async (req, res) => {
-  try {
-    const paintballData = await paintball.findAll();
-    res.status(200).json(paintballData);
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
+// router.get('/', async (req, res) => {
+//   try {
+//     const paintballData = await paintball.findAll();
+//     res.status(200).json(paintballData);
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });
 
 
 
-router.get('/:id', async (req, res) => {
-  try {
-    const paintballData = await paintball.findByPk(req.params.id, {
+// router.get('/:id', async (req, res) => {
+//   try {
+//     const paintballData = await paintball.findByPk(req.params.id, {
      
-      include: [{ model: Paintball, through: profile, as: 'reserved_event' }]
-    });
+//       include: [{ model: Paintball, through: profile, as: 'reserved_event' }]
+//     });
 
-    if (!paintballData) {
-      res.status(404).json({ message: 'No paintball found with this id!' });
-      return;
-    }
+//     if (!paintballData) {
+//       res.status(404).json({ message: 'No paintball found with this id!' });
+//       return;
+//     }
 
-    res.status(200).json(paintballData);
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
+//     res.status(200).json(paintballData);
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });
 
 
 
-router.post('/', async (req, res) => {
-  try {
-    const paintballData = await paintball.create(req.body);
-    res.status(200).json(paintballData);
-  } catch (err) {
-    res.status(400).json(err);
-  }
-});
+// router.post('/', async (req, res) => {
+//   try {
+//     const paintballData = await paintball.create(req.body);
+//     res.status(200).json(paintballData);
+//   } catch (err) {
+//     res.status(400).json(err);
+//   }
+// });
 
 module.exports = router;

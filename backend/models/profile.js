@@ -37,14 +37,11 @@ Profile.init(
         isDate: true,
       },
     },
-    airsoft_id: {
+    event_id: {
       type: DataTypes.STRING,
       allowNull: true
     },
-    paintball_id: {
-      type: DataTypes.STRING,
-      allowNull: true
-    }
+    
   },
   {
     sequelize,
