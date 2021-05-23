@@ -36,13 +36,8 @@
     "sequelize": "^6.6.2",
     "web-vitals": "^1.1.1"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "seed": "node seeds/index.js",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+ 
+  
   "eslintConfig": {
     "extends": [
       "react-app",
