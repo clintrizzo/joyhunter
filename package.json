@@ -24,6 +24,6 @@
   "dependencies": {
     "concurrently": "^6.1.0",
     "if-env": "^1.0.4",
-    "nodejs": "*"
+    "nodejs": "14.15.4"
   }
 }
