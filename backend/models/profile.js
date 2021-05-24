@@ -41,6 +41,10 @@ Profile.init(
       type: DataTypes.STRING,
       allowNull: true
     },
+    event_type: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
     
   },
   {

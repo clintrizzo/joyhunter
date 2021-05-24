@@ -28,7 +28,8 @@ myHeaders.append("Content-Type", "application/json");
 
 var raw = JSON.stringify({
   "userId": 4,
-  "eventId": event_id
+  "eventId": event_id,
+  "event_type": "paintball"
 });
 
 var requestOptions = {

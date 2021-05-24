@@ -8,37 +8,29 @@ import {useState, useEffect, post} from "react";
 
 function Profile ()  {
 
-  const profe = (eventId) => {
-
-    var myHeaders = new Headers();
-myHeaders.append("Content-Type", "application/json");
-
-var raw = JSON.stringify({
-  "userId": 4,
-  "eventId": eventId
-});
+  const profe = async (eventId, event_type) => {
 
 var requestOptions = {
   method: 'GET',
-  headers: myHeaders,
-  body: raw,
   redirect: 'follow'
 };
 
-fetch("/api/profiles/reserve", requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
-  }
+const res =  
 
-  const [ profiles, setEvents ] = useState([]);
+await fetch ("/api/" + event_type + "/" + eventId, requestOptions)
+const jsonData = await res.json();
+setEvent (jsonData);
+  }
+  const [ event, setEvent ] = useState([]);
+  const [ profile, setEvents ] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch('/api/profiles');
+        const res = await fetch('/api/profiles/4');
         const jsonData = await res.json();
         console.log(jsonData);
+        profe (jsonData.event_id, jsonData.event_type)
         setEvents(jsonData);
       } catch(err){
         console.log(err);
@@ -48,38 +40,61 @@ fetch("/api/profiles/reserve", requestOptions)
   
   }, [])
  
-//   return (
-//     <div className="some-page-wrapper">
+  return (
+
     
-//       {
-//         profiles.map(eventId => {
-//           return(
-// <Card className=" top text-center" style={{borderRadius:"40px", backgroundColor:"rgb(245,245,245)"}} data-id={airsoft.id}>
-//   <Card.Header className="head" style={{borderRadius:"40px", backgroundColor:"lightgray"}}>{airsoft.eventTitle}</Card.Header>
-//   <center>
-//   <Card.Body >
-//     <Card.Title className="tile">{airsoft.location}</Card.Title>
-//     <hr></hr>
-//     <Card.Text>
-//     {airsoft.phoneNumber}
-//     </Card.Text>
-//     <Card.Text>
-//     {airsoft.date}
-//     </Card.Text>
-//     <Card.Title> Rules: </Card.Title>
-//     <Card.Title> {airsoft.rule1}</Card.Title>
-//     <Card.Title> {airsoft.rule2}</Card.Title>
+    <div className="some-page-wrapper">
+  <div>
+  <div className="some-page-wrapper">
+  
+  <Card className=" top text-center" style={{borderRadius:"40px", backgroundColor:"rgb(245,245,245)"}} >
+    <Card.Header className="head" style={{borderRadius:"40px", backgroundColor:"lightgray"}}>{profile.name}</Card.Header>
+    <center>
+    <Card.Body >l
+      <Card.Title className="tile">{event.email}</Card.Title>
+      <hr></hr>
+      <Card.Text>
+      {event.city}
+      </Card.Text>
+      <Card.Text>
+      {event.dob}
+      </Card.Text>
+ 
+     
+  
+  
+    </Card.Body>
+   </center>
+  </Card>
+        
+        
+  </div>
+  </div>
+<Card className=" top text-center" style={{borderRadius:"40px", backgroundColor:"rgb(245,245,245)"}} data-id={event.id}>
+  <Card.Header className="head" style={{borderRadius:"40px", backgroundColor:"lightgray"}}>{event.eventTitle}</Card.Header>
+  <center>
+  <Card.Body >l
+    <Card.Title className="tile">{event.location}</Card.Title>
+    <hr></hr>
+    <Card.Text>
+    {event.phoneNumber}
+    </Card.Text>
+    <Card.Text>
+    {event.date}
+    </Card.Text>
+    <Card.Title> Rules: </Card.Title>
+    <Card.Title> {event.rule1}</Card.Title>
+    <Card.Title> {event.rule2}</Card.Title>
    
 
 
-//   </Card.Body>
-//  </center>
-// </Card>
-//           )
-//         })
-//       }
-// </div>
-//   )
+  </Card.Body>
+ </center>
+</Card>
+      
+      
+</div>
+  )
     };
 
  export default Profile;

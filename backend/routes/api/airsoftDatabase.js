@@ -1,12 +1,28 @@
 const router = require("express").Router();
 const airsoftController = require("../../controllers/airsoftController");
 
-const { airsoft, profile } = require('../../models');
+const { Profile, Airsoft, Paintball } = require("../../models");
 
 
 router.route("/")
 .get(airsoftController.eventLists);
 
+router.get("/:id", async (req, res) => {
+  try {
+    const dbUser = await Airsoft.findOne({
+      where: {
+        id: req.params.id,
+      },
+    });
+
+
+    
+    res.status(200).json(dbUser);
+  } catch (err) {
+    console.error(err);
+    res.sendStatus(500);
+  }
+});
 
 
 

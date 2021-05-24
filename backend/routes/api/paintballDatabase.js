@@ -1,13 +1,31 @@
 const router = require("express").Router();
 const paintballController = require("../../controllers/paintballController");
+const { Profile, Airsoft, Paintball } = require("../../models");
 
-const { paintball, profile } = require('../../models');
+
 
 
 router.route("/")
 .get(paintballController.eventLists);
 
 
+
+router.get("/:id", async (req, res) => {
+  try {
+    const dbUser = await Paintball.findOne({
+      where: {
+        id: req.params.id,
+      },
+    });
+
+    // console.log(dbUser.dataValues.event_id.split(' '))
+    
+    res.status(200).json(dbUser);
+  } catch (err) {
+    console.error(err);
+    res.sendStatus(500);
+  }
+});
 // router.get('/', async (req, res) => {
 //   try {
 //     const paintballData = await paintball.findAll();

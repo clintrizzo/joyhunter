@@ -4,13 +4,7 @@ const { Profile, Airsoft, Paintball } = require("../../models");
 
 router.route("/").get(profileController.eventLists);
 
-router.get("/", async (req, res) => {
-  Profile.findAll({
-    include: [Airsoft, Paintball],
-  })
-    .then((profiles) => res.json(profiles))
-    .catch((err) => res.status(500).json(err));
-});
+
 
 router.get("/:id", async (req, res) => {
   try {
@@ -20,9 +14,9 @@ router.get("/:id", async (req, res) => {
       },
     });
 
-    console.log(dbUser.dataValues.event_id.split(' '))
+    // console.log(dbUser.dataValues.event_id.split(' '))
     
-    res.sendStatus(200)
+    res.status(200).json(dbUser);
   } catch (err) {
     console.error(err);
     res.sendStatus(500);

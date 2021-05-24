@@ -9,7 +9,7 @@ exports.eventLists = function (req, res) {
 
 exports.reserve = async (req, res) => {
   try {
-    const { userId, eventId, eventType } = req.body;
+    const { userId, eventId, event_type } = req.body;
     // if ... else... 
     const profiles = await Profile.findOne({
       where: {
@@ -24,7 +24,7 @@ exports.reserve = async (req, res) => {
       const newEventId = `${dbEventId} ${eventId}`;
 
       const dbUser = await Profile.update(
-        { event_id: newEventId },
+        { event_id: newEventId, event_type },
         {
           where: { id: userId },
         }
