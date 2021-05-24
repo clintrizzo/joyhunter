@@ -12,8 +12,8 @@
     "start:prod": "cd server && npm start",
  
     
-    "seed": "cd server && npm run seed",
-    "build": " npm run build"
+    "seed": "cd server && npm run seed"
+    
     },
   "repository": {
     "type": "git",
