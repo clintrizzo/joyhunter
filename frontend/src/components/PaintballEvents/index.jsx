@@ -20,6 +20,30 @@ const PaintballEvents = () => {
     fetchData();
   
   }, [])
+
+
+  const btnp = ( event_id ) => {
+    var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+
+var raw = JSON.stringify({
+  "userId": 4,
+  "eventId": event_id,
+  "event_type": "paintball"
+});
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("/api/profiles/reserve", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+  }
   return (
     <div className="some-page-wrapper">
       <h1 className="eventPage">Paintball Events</h1>
@@ -43,7 +67,8 @@ const PaintballEvents = () => {
       <Card.Title> {paintball.rule1}</Card.Title>
       <Card.Title> {paintball.rule2}</Card.Title>
       
-      <Button className="button">Reservation</Button>
+      <Button onClick={() => btnp(paintball.id)}
+ className="button">Reserve</Button>
     </Card.Body>
    </center>
   </Card>

@@ -28,6 +28,28 @@ const AirsoftEvents = () => {
   
   }, [])
 
+  const btn = ( event_id ) => {
+    var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+
+var raw = JSON.stringify({
+  "userId": 4,
+  "eventId": event_id,
+  "event_type": "airsoft"
+});
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("/api/profiles/reserve", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+  }
 
   return (
     <div className="some-page-wrapper">
@@ -51,7 +73,8 @@ const AirsoftEvents = () => {
     <Card.Title> {airsoft.rule1}</Card.Title>
     <Card.Title> {airsoft.rule2}</Card.Title>
    
-    <Button className="button">Reserve</Button>
+    <Button onClick={() => btn(airsoft.id)}
+ className="button">Reserve</Button>
 
   </Card.Body>
  </center>
