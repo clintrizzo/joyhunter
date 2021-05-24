@@ -2,7 +2,7 @@ import React from "react";
 // import { scryRenderedComponentsWithType } from "react-dom/test-utils";
 //import MyEvents from "../components/MyEvents";
 import "./style/style.css";
-import Card from "../components/profileCard"
+import Name from "../components/profileCard"
 import {useState, useEffect, post} from "react";
 
 
@@ -44,33 +44,33 @@ setEvent (jsonData);
 
     
     <div className="some-page-wrapper">
-  <div>
+   <Name />
   <div className="some-page-wrapper">
   
-  <Card className=" top text-center" style={{borderRadius:"40px", backgroundColor:"rgb(245,245,245)"}} >
-    <Card.Header className="head" style={{borderRadius:"40px", backgroundColor:"lightgray"}}>{profile.name}</Card.Header>
-    <center>
-    <Card.Body >l
+  {/* <Card className=" top text-center" style={{borderRadius:"40px", backgroundColor:"rgb(245,245,245)"}} >
+   <Card.Header className="head" style={{borderRadius:"40px", backgroundColor:"lightgray"}}>{profile.name}</Card.Header>
+     <center>
+     <Card.Body >
       <Card.Title className="tile">{event.email}</Card.Title>
-      <hr></hr>
+       <hr></hr>
+       <Card.Text>
+     {event.city}
+     </Card.Text>
       <Card.Text>
-      {event.city}
-      </Card.Text>
-      <Card.Text>
-      {event.dob}
-      </Card.Text>
+       {event.dob}
+       </Card.Text>
  
      
   
   
-    </Card.Body>
-   </center>
-  </Card>
+   </Card.Body>
+  </center>
+   </Card>
+         */}
         
-        
-  </div>
-  </div>
-<Card className=" top text-center" style={{borderRadius:"40px", backgroundColor:"rgb(245,245,245)"}} data-id={event.id}>
+ 
+ 
+{/* <Card className=" top text-center" style={{borderRadius:"40px", backgroundColor:"rgb(245,245,245)"}} data-id={event.id}>
   <Card.Header className="head" style={{borderRadius:"40px", backgroundColor:"lightgray"}}>{event.eventTitle}</Card.Header>
   <center>
   <Card.Body >l
@@ -90,10 +90,10 @@ setEvent (jsonData);
 
   </Card.Body>
  </center>
-</Card>
-      
-      
+</Card> */}
 </div>
+</div>
+
   )
     };
 
