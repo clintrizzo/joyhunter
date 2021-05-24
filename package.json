@@ -1,8 +1,13 @@
 {
   "name": "joyhunter",
   "version": "0.1.0",
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
+  
+    "engines" : { 
+      "node" : "14.15.4", 
+      "npm" : "7.14.0"
+    },
+
+ 
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "cd server && npm start",
