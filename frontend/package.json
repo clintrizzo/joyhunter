@@ -1,6 +1,10 @@
 {
   "name": "joyhunter",
   "version": "0.1.0",
+  "engines" : { 
+    "node" : "14.15.4",
+    "npm" : "7.14.0"
+  },
   "private": true,
   "proxy": "http://localhost:3001/",
   "dependencies": {
