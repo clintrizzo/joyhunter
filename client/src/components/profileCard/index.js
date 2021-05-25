@@ -70,7 +70,7 @@ function Profile ()  {
       </div>
     </div>
     <br></br>
-        <div class="card" style={{borderRadius:"30px", width: "90%", marginLeft:"95px", borderRadius:"20px", backgroundColor:"rgb(245,245,245)"}}>
+        <div class="card" style={{borderRadius:"30px", width: "90%", marginLeft:"95px", backgroundColor:"rgb(245,245,245)"}}>
           <h1 style={{color:"black"}}><center>Upcoming Reserved Games</center></h1>
         </div>
     <br></br>
