@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "engines": {
-    "nodejs": "^16.1.0",
+    "nodejs": "^14.17.0",
     "npm": "7.14.0"
   },
   "scripts": {
@@ -21,7 +21,7 @@
     "express": "^4.17.1",
     "mysql": "^2.18.1",
     "mysql2": "^2.2.5",
-    "nodejs": "^16.1.0",
+    "nodejs": "^14.17.0",
     "nodemon": "^2.0.7",
     "sequelize": "^6.6.2"
   }
