@@ -13,7 +13,7 @@
       "start": "concurrently \"cd backend && npm start\" \"cd frontend && npm start\"",
       "build": "cd backend && npm start",
       "seed": "cd backend  && npm run seeds/index.js",
-      "heroku-postbuild": "npm run start"
+      "heroku-postbuild": "cd frontend && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
     },
   "repository": {
     "type": "git",
