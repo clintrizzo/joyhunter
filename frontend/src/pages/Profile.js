@@ -3,6 +3,7 @@ import React from "react";
 //import MyEvents from "../components/MyEvents";
 import "./style/style.css";
 import Name from "../components/profileCard"
+import {Card} from "react-bootstrap";
 import {useState, useEffect, post} from "react";
 
 
@@ -70,7 +71,7 @@ setEvent (jsonData);
         
  
  
-{/* <Card className=" top text-center" style={{borderRadius:"40px", backgroundColor:"rgb(245,245,245)"}} data-id={event.id}>
+<Card className=" top text-center" style={{borderRadius:"40px", backgroundColor:"rgb(245,245,245)"}} data-id={event.id}>
   <Card.Header className="head" style={{borderRadius:"40px", backgroundColor:"lightgray"}}>{event.eventTitle}</Card.Header>
   <center>
   <Card.Body >l
@@ -90,7 +91,7 @@ setEvent (jsonData);
 
   </Card.Body>
  </center>
-</Card> */}
+</Card>
 </div>
 </div>
 
