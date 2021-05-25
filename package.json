@@ -2,7 +2,9 @@
   "name": "joyhunter",
   "version": "0.1.0",
   "engines": {
-   
+    
+      "node": "14.17.0",
+    
     "npm": "7.14.0"
   },
   "scripts": {
