@@ -24,7 +24,7 @@ function App() {
    <div>
      <Navbar />
      
-       {/* <Wrapper> */}
+
           
     <div className="App" style={{ 
       backgroundImage: `url("./images/Back.jpg")`}}>
@@ -35,8 +35,7 @@ function App() {
         <Route exact path="/Homepage" component={Homepage} />
           <Route exact path="/Airsoft" component={Airsoft} />
            <Route exact path="/Profile" component={Profile} />
-           {/* <Route exact path="/Wrapper" component={Wrapper} /> */}
-      {/* </Wrapper> */}
+ 
       </div>
       </div>
       <Footer />
