@@ -10,10 +10,12 @@
     "scripts": {
     
     
-      "start": "concurrently \"cd backend && npm run start\" \"cd frontend && npm run start\"",
-      "build": "cd backend && npm start",
-      "seed": "cd backend  && npm run seeds/index.js",
-      "heroku-postbuild": "cd frontend && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+      "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+      "start:prod": "cd server && npm start",
+      "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+      "install": "cd server && npm i && cd ../client && npm i",
+      "seed": "cd server && npm run seed",
+      "build": "cd client && npm run build"
     },
   "repository": {
     "type": "git",
