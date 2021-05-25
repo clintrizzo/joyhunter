@@ -8,9 +8,9 @@
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "cd server && npm start",
-    "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
-    "seed": "cd server && npm run seeds/index.js",
-    "build": "cd client && npm run build"
+    "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\""
+    
+    // "build": "cd client && npm run build"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,6 @@
   "dependencies": {
     "concurrently": "^6.1.0",
     "if-env": "1.0.4",
-    "react-scripts": "^4.0.3"
+    "react-scripts": "^1.1.5"
   }
 }
