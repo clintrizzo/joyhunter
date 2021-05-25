@@ -10,7 +10,7 @@
     "scripts": {
     
     
-      "start": "concurrently \"cd backend && npm start\" \"cd frontend && npm start\"",
+      "start": "concurrently \"cd backend && npm run start\" \"cd frontend && npm run start\"",
       "build": "cd backend && npm start",
       "seed": "cd backend  && npm run seeds/index.js",
       "heroku-postbuild": "cd frontend && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
