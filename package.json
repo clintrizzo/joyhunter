@@ -2,7 +2,7 @@
   "name": "joyhunter",
   "version": "0.1.0",
   "engines": {
-    "nodejs": "14.16.1",
+    "nodejs": "14.15.4",
     "npm": "7.14.0"
   },
   "scripts": {
@@ -26,6 +26,6 @@
   "dependencies": {
     "concurrently": "^6.1.0",
     "if-env": "1.0.4",
-    "nodejs": "14.16.1"
+    "nodejs": "14.15.4"
   }
 }
