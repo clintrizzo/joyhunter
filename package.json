@@ -11,7 +11,7 @@
     
     
       "start": "concurrently \"cd backend && npm start\" \"cd frontend && npm start\"",
-      "build": "cd backend && npm run server",
+      "build": "cd backend && npm start",
       "seed": "cd backend  && npm run seeds/index.js",
       "heroku-postbuild": "npm run build"
     },
