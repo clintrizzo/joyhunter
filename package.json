@@ -9,9 +9,8 @@
 
     "scripts": {
     
-      "start": " npm run start:prod || npm run start:dev",
-      "start:prod": "cd backend server && npm start",
-      "start:dev": "concurrently \"cd backend && npm run watch\" \"cd frontend && npm start\"",
+    
+      "start": "concurrently \"cd backend && npm start\" \"cd frontend && npm start\"",
       "build": "cd backend && npm run server",
       "seed": "cd backend  && npm run seeds/index.js",
       "heroku-postbuild": "npm run build"
@@ -31,3 +30,5 @@
     "if-env": "^1.0.4"
   }
 }
+
+
