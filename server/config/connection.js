@@ -1,21 +1,21 @@
-const Sequelize = require('sequelize');
-require('dotenv').config();
-
-let sequelize;
+var mysql = require('mysql')
+var connection;
 
 if (process.env.JAWSDB_URL) {
-  sequelize = new Sequelize(process.env.JAWSDB_URL);
+  connection = mysql.createConnection(process.env.JAWSDB_URL)
 } else {
-  sequelize = new Sequelize(
-    process.env.DB_NAME,
-    process.env.DB_USER,
-    process.env.DB_PASSWORD,
-    {
-      host: 'localhost',
-      dialect: 'mysql',
-      port: 3306
+  connection = mysql.createConnection({
+    port:3306,
+    host:'tvcpw8tpu4jvgnnq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	',
+    user:'z03ymjairscgxjet',
+    password:'y6aws1hygf7kafo3',
+    database:'p298p57zjhjzof5d',
     }
   );
 }
 
-module.exports = sequelize;
+connection.connect();
+
+module.exports = connection;
+
+

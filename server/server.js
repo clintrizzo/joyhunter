@@ -1,6 +1,6 @@
 
 const express = require('express');
-const sequelize = require('./config/connection');
+const connection = require('./config/connection');
 const path = require('path');
 //const cors = require('cors');
 
@@ -8,7 +8,7 @@ const routes = require('./routes');
 
 //const app = cors();
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -24,8 +24,8 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => {
-    console.log(`App listening on port ${PORT}!`);
+connection.sync().then(function(){
+  app.listen(PORT, function(){
+    console.log("App listening on port " + PORT);
   });
 });
