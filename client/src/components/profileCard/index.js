@@ -1,9 +1,10 @@
 import React from "react";
 import "./profileCard.css";
 
-
 function Profile ()  {
   return (
+    <div className="titlePage">
+      <h1 style={{fontSize:"100px"}}>Joyhunter Profile</h1>
 <div className="App" style={{ 
       backgroundImage: `url("./images/Back.jpg")`}}>
   <div className="padding">
@@ -70,13 +71,12 @@ function Profile ()  {
       </div>
     </div>
     <br></br>
-        <div class="card" style={{borderRadius:"30px", width: "90%", marginLeft:"95px", borderRadius:"20px", backgroundColor:"rgb(245,245,245)"}}>
+        <div class="card" style={{borderRadius:"20px", backgroundColor:"rgb(245,245,245)", marginLeft:"80px"}}>
           <h1 style={{color:"black"}}><center>Upcoming Reserved Games</center></h1>
         </div>
     <br></br>
     <br></br>
-    <br></br>
-    <br></br>
+  </div>
   </div>
   )
  };

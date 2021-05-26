@@ -1,4 +1,8 @@
 /*profile ---------------------------------*/
+.titlePage{
+  text-align: center;
+  margin-right: 40px;
+}
 
 .column {
     width: 50%;
@@ -22,11 +26,9 @@
     background-color: #f1f1f1;
   }
   
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  .inside:hover {
+    box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.2);
   }
-
-  .row {margin: 0 -5px;}
   
   .badges{
     color:black;
@@ -43,15 +45,24 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 
-  .padding{
-      padding-left: 80px;
-      padding-top: 30px;
-  }
+.padding{
+  padding-top: 25px;
+}
 
   .profileImage{
      height:850px;
-     width: 750px;
+     width: 690px;
      margin-left: 10px;
      border-radius: 50px;
-     padding: 10px;
   }
+
+  @media only screen and (max-width: 1300px) {
+    .profileImage {
+      width:420px;
+      height: 450px;
+      margin-left:15px;
+    }
+    .padding{
+      table-layout: auto;
+    }
+  } 
