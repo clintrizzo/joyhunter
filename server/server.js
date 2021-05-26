@@ -24,6 +24,15 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
+const connection = mysql.createConnection({
+  host: 'htvcpw8tpu4jvgnnq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+  user: 'z03ymjairscgxjet',
+  port: '3306',
+  password: 'y6aws1hygf7kafo3',
+  database: 'p298p57zjhjzof5d',
+  insecureAuth: true
+});
+
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}!`);
