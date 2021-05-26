@@ -1,6 +1,7 @@
 const Airsoft = require("./airsoft");
 const Paintball = require("./paintball");
 const Profile = require("./profile");
+var config = require(__dirname + '/config/config')[env];
 
 Paintball.belongsTo(Profile, {
   foreignKey: 'profile_id',
