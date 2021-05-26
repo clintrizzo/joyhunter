@@ -1,27 +1,19 @@
+// Set up MySQL connection.
 var mysql = require("mysql");
-
-if (process.env.JAWSDB_URL) {
+var connection;
+//make connection
+if (process.env.JAWSDB_URL){
   connection = mysql.createConnection(process.env.JAWSDB_URL);
-} else {
-  var connection = mysql.createConnection({
-    host: "tvcpw8tpu4jvgnnq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+}else{
+  connection = mysql.createConnection({
     port: 3306,
-    user: "z03ymjairscgxjet",
-    password: "y6aws1hygf7kafo3",
+    host: "localhost",
+    user: "root",
+    password: "",
     database: "p298p57zjhjzof5d"
-  });
+  })
 }
-
-// Make connection.
-connection.connect(function(err) {
-  if (err) {
-    console.error("error connecting: " + err.stack);
-    return;
-  }
-  console.log("connected as id " + connection.threadId);
-});
-
+connection.connect();
 // Export connection for our ORM to use.
 module.exports = connection;
-
 
