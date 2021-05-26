@@ -32,7 +32,7 @@ setEvent (jsonData);
         const jsonData = await res.json();
         console.log(jsonData);
         profe (jsonData.event_id, jsonData.event_type)
-        setEvents(jsonData);
+        //setEvents(jsonData);
       } catch(err){
         console.log(err);
       }
