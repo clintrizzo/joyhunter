@@ -4,7 +4,7 @@ import React from "react";
 import "./style/style.css";
 import Name from "../components/profileCard"
 import {Card} from "react-bootstrap";
-import {useState, useEffect, post} from "react";
+import {useState, useEffect} from "react";
 
 
 function Profile ()  {
@@ -23,7 +23,7 @@ const jsonData = await res.json();
 setEvent (jsonData);
   }
   const [ event, setEvent ] = useState([]);
-  const [ profile, setEvents ] = useState([]);
+  //const [ profile, setEvents ] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -32,7 +32,7 @@ setEvent (jsonData);
         const jsonData = await res.json();
         console.log(jsonData);
         profe (jsonData.event_id, jsonData.event_type)
-        setEvents(jsonData);
+        //setEvents(jsonData);
       } catch(err){
         console.log(err);
       }

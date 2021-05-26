@@ -28,6 +28,7 @@
     "concurrently": "^6.1.0",
     "cors": "^2.8.5",
     "if-env": "1.0.4",
-    "react-scripts": "^1.1.5"
+    "react-scripts": "^1.1.5",
+    "sequelize": "^6.6.2"
   }
 }

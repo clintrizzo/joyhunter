@@ -7,9 +7,9 @@ const Signup = () => {
 
   return (
     !isAuthenticated && (
-      <nav onClick={() => loginWithRedirect()} className="navbar navbar-expand-lg navbar-dark bg-light">
+      <button onClick={() => loginWithRedirect()} className="navbar navbar-expand-lg navbar-dark bg-light">
         Log In
-      </nav>
+      </button>
     )
   )
 }
