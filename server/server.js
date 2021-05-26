@@ -8,7 +8,7 @@ const routes = require('./routes');
 
 //const app = cors();
 const app = express();
-//const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -24,7 +24,6 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-var PORT = process.env.PORT || 3000;
 connection.sync().then(function(){
   app.listen(PORT, function(){
     console.log("App listening on port " + PORT);
