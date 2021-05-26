@@ -2,7 +2,7 @@
   "name": "joyhunter",
   "version": "0.1.0",
   "engines": {
-    "node": "^16.1.0",
+    "node": "14.17.0",
     "npm": "7.14.0"
   },
   "private": true,
@@ -15,20 +15,20 @@
     "auth0": "^2.34.2",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
+    "cors": "^2.8.5",
     "dotenv": "^9.0.2",
     "emailjs-com": "^2.6.4",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "jest": "^26.6.0",
     "mysql2": "^2.2.5",
-    "node": "^16.1.0",
     "react": "^17.0.2",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.2",
     "react-player": "^2.9.0",
     "react-responsive-carousel": "^3.2.18",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^1.1.5",
     "sequelize": "^6.6.2",
     "web-vitals": "^1.1.1"
   },
@@ -48,7 +48,6 @@
   "browserslist": {
     "production": [
       ">0.2%",
-      "not dead",
       "not op_mini all"
     ],
     "development": [

@@ -2,16 +2,17 @@
   "name": "joyhunter",
   "version": "0.1.0",
   "engines": {
-    "node": "^16.1.0",
+    "node": "14.17.0",
     "npm": "7.14.0"
   },
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "cd server && npm start",
-    "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
-    "install": "cd server && npm i && cd ../client && npm i",
-    "seed": "cd server && npm run seed",
-    "build": "cd client && npm run build"
+    "start:prod": "cd server && node server.js",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start --prefix client",
+    "start:dev": "concurrently \"cd server &&  node server.js\" \"cd client && npm start\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "seed": "cd client && node seeds/index.js"
   },
   "repository": {
     "type": "git",
@@ -25,7 +26,8 @@
   "homepage": "https://github.com/Noreldin-S/project-3#readme",
   "dependencies": {
     "concurrently": "^6.1.0",
-    "if-env": "^1.0.4",
-    "node": "^16.1.0"
+    "cors": "^2.8.5",
+    "if-env": "1.0.4",
+    "react-scripts": "^1.1.5"
   }
 }
