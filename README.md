@@ -1,7 +1,8 @@
 # Joyhunter 
   
 ## Table of Contents
--  [Description](#description)  
+-  [Description](#description)
+-  [Deployed link](#Deployment)  
 -  [Technologies](#technologies)  
 -  [Developers](#developers)  
 -  [Images](#images)  
@@ -10,6 +11,9 @@
 Airsoft and paintball app that allows you to find upcomming games near your area.  
 Users are able to reserve multiple games to get an estimate of attendees.  
 Personal profile that tracks your wins, k/d ratio, and headshots.  
+
+# Deployment
+[Heroku](https://joyhunter2.herokuapp.com/)
 
 ## Technologies
 Front-end: React, HTML, CSS  
